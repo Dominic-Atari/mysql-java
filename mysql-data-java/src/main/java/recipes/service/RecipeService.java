@@ -76,6 +76,7 @@ public class RecipeService {
    *        whitespace.
    * @return The list of extracted SQL statements.
    */
+
   private List<String> extractLinesFromContent(String content) {
     List<String> lines = new LinkedList<>();
 

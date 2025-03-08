@@ -712,7 +712,7 @@ public class RecipeDao extends DaoBase {
    * @return
    */
   public boolean deleteRecipe(Integer recipeId) {
-    String sql = "DELETE FROM " + RECIPE_TABLE + " WHERE recipe_id = ?";;
+    String sql = "DELETE FROM " + RECIPE_TABLE + " WHERE recipe_id = ?";
 
     try (Connection conn = DbConnection.getConnection()) {
       startTransaction(conn);
